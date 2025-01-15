@@ -28,7 +28,6 @@ func TestPhoneNumber(t *testing.T){
 		g.Expect(ok).NotTo(BeTrue())
 		g.Expect(err).NotTo(BeNil())
 		g.Expect(err.Error()).To(Equal(fmt.Sprintf("Phone: %s does not validate as stringlength(10|10)", user.Phone)))
-
 	})
 }
 
